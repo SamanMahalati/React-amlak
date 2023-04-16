@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing {
+    background-image: url(./images//landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tehranGrid {
+    background-image: url(./images/City/1.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+.MazandaranGrid {
+    background-image: url(./images/City/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.MashhadGrid {
+    background-image: url(./images/City/3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.EsfahanGrid {
+    background-image: url(./images/City/4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Swiper */
+.swiper-wrapper {
+    padding: 0 0 4rem 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff5a5f !important;
+}
+
+#swiperBrand>.swiper-wrapper {
+    padding: 0 4rem;
+}
+
+#swiperBrand>.swiper-button-prev,
+#swiperBrand>.swiper-button-next {
+    background-color: #ff5a5f;
+    color: #fff;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#swiperBrand>.swiper-button-prev::after,
+#swiperBrand>.swiper-button-next::after {
+    font-size: 1.5rem;
+}
+
+/* Sweet alert */
